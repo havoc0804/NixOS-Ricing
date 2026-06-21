@@ -1,0 +1,1 @@
+awww img ./dotfiles/wallpapers/2.jpg && matugen image ./dotfiles/wallpapers/2.jpg  --source-color-index 1 -t scheme-tonal-spot
