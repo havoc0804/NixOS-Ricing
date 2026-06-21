@@ -3,4 +3,5 @@
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf' # If using lua config replace *.conf* with *.lua* at the end
+post_hook = 'hyprctl reload'
 # ...
