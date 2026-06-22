@@ -4,7 +4,7 @@ $line_break\
 $character"""
 
 [directory]
-truncation_lenght = 3
+truncation_length = 3
 truncate_to_repo = false
 style = "white"
 
