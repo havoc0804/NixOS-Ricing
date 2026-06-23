@@ -17,8 +17,8 @@ alias gc='git commit -m'
 alias gp='git push'
 
 #NixOS Specifc
-alias rbs='sudo nixos-rebuild switch'
+alias nrbs='sudo nixos-rebuild switch'
 
 #Misc
-alias s='sudo'
-alias n='nvim'
+alias s='sudo '
+alias n='nvim '

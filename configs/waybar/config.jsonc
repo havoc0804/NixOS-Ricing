@@ -1,0 +1,44 @@
+{
+	"height": 30,
+	"spacing": 4,
+		"modules-right": [
+		"pulseaudio",
+		"bluetooth",
+		"network",
+		"clock"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+
+	"clock": {
+		"interval": 60,
+		"format": "{:L%a %d %b %H:%M}"
+	},
+	"network": {
+		"interface": "wlp7s0",
+		"format-wifi": "{essid}"
+	},
+	"hyprland/workspaces": {
+		"format": "{name}",
+		"format-icons": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5",
+			"6": "6",
+			"7": "7",
+			"8": "8",
+			"9": "9",
+			"10": "10",
+		//	"active": "",
+		//	"default": ""
+			},
+		"persistent-workspaces": {
+			"*": 5
+			}
+	}
+
+
+}
