@@ -3,7 +3,7 @@
 * {
 	all: unset;
 	font-family: "Roboto Mono", "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP";
-	font-size: 13px;
+	font-size: 18px;
 }
 
 /* Master bar positioning container */
@@ -17,7 +17,6 @@ label {
 }
 
 /* --- Shared Modular Capsule System --- */
-/* Every standard block behaves as a perfect pill */
 #custom-media,
 #window,
 #pulseaudio,
@@ -27,35 +26,44 @@ label {
 #workspaces {
 	background-color: @surface_container;
 	color: @on_surface;
-	padding: 4px 14px;
+	padding: 5px 16px;
 	border-radius: 99px;
-	margin: 7px 4px; /* Flawless 7px margin structure matching your gaps_out */
+	margin: 7px 4px;
 }
 
-/* Specific Margin Trimming for Window Edges */
-#custom-media { margin-left: 7px; color: @tertiary; }
-#clock { margin-right: 7px; font-weight: 500; }
-#window { color: @primary; }
+/* Specific Margin Trimming for Layout Edges */
+#window { 
+	margin-left: 7px; 
+	color: @primary;
+}
+
+#custom-media { 
+	color: @tertiary;
+}
+
+#clock { 
+	margin-right: 7px; 
+	font-weight: 500;
+}
 
 /* --- Workspaces Overrides --- */
 #workspaces {
-	padding: 4px 6px;
+	padding: 5px 6px;
 }
 
-/* Individual Workspace Elements */
 #workspaces button {
 	color: @on_surface_variant;
-	padding: 0px 10px;
+	padding: 0px 8px;
 	border-radius: 99px;
 	margin: 0 2px;
 	transition: all 250ms ease-in-out;
 	font-weight: bold;
 }
 
-/* Active Workspace Indicator */
 #workspaces button.active {
 	background-color: @primary;
 	color: @on_primary;
-	min-width: 2rem;
+	min-width: 1.2rem;
+	padding: 0px 8px;
 	font-weight: 800;
 }
