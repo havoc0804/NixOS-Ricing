@@ -27,4 +27,13 @@ command = "awww img --transition-type center {{ image }}"
 # For example, killing the wallpaper daemon. Usage is like a normal hook.
 # pre_hook = ""
 
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar-colors.conf'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+
+
+
+
 

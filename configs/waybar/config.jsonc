@@ -1,6 +1,8 @@
 {
-	"height": 30,
-	"spacing": 4,
+	"height": 10,
+	"spacing": 20,
+	"margin-top": 10,
+	"padding": 10,
 		"modules-right": [
 		"pulseaudio",
 		"bluetooth",
@@ -17,7 +19,8 @@
 	},
 	"network": {
 		"interface": "wlp7s0",
-		"format-wifi": "{essid}"
+		"format-wifi": "{essid} ",
+		"on-click": "kitty --class dotfiles-floating -e nmtui"
 	},
 	"hyprland/workspaces": {
 		"format": "{name}",
@@ -36,9 +39,21 @@
 		//	"default": ""
 			},
 		"persistent-workspaces": {
-			"*": 5
+			"DP-4": [1,2,3,4,5],
+			"HDMI-A-2": [6,7,8,9,10]
 			}
+	},
+	"bluetooth": {
+		"formant": "󰂯",
+		"format-on": "󰂯",
+		"formant-off": "󰂲",
+		"format-disabled": "󰂲",
+		"on-click": "blueman-manager"
+	},
+	"pulseaudio": {
+		"format": "{volume}% {icon}",
+		"format-muted": "󰝟",	
+		"scroll-step": 1,
+		"on-click" : "pavucontrol"
 	}
-
-
 }

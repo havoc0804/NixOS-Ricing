@@ -1,0 +1,46 @@
+@import "colors.css";
+
+* {
+	all:unset;
+	font-family: "Roboto Mono", "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP";
+}
+
+
+
+.modules-right {
+	background-color: @background;
+	padding: 2px 8px;
+	border-radius: 99px;
+	letter-spacing: +0.5px
+}
+
+.modules-center {
+	background-color: @background;
+	padding: 2px 8px;
+	border-radius: 99px;
+	letter-spacing: +1px
+}
+
+#clock {
+	font-weight: 500;
+}
+
+#workspaces {
+	background-color: @background;
+	padding: 2px 4px;
+	margin: 2px 0;
+	border-radius: 99px;
+}
+
+#workspace button {
+	background-color: @inverse-background;
+	padding: 2px 4px;
+	border-radius: 99px;
+	margin: 0 2px;
+	transition: all 300ms ease-in-out;
+}
+
+#wokespaces button.active {
+	background-color: @inverse-background;
+	min-width: 1.5rem;
+}
