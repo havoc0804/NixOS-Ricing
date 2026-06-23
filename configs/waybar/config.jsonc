@@ -1,7 +1,11 @@
 {
 	"height": 10,
+	"layer": "top",
 	"spacing": 20,
-	"margin-top": 10,
+	"margin-top": 5,
+	"margin-left": 10,
+	"margin-right": 10,
+	"margin-bottom": 0,
 	"padding": 10,
 		"modules-right": [
 		"pulseaudio",
@@ -19,7 +23,17 @@
 	},
 	"network": {
 		"interface": "wlp7s0",
-		"format-wifi": "{essid} ",
+		"format": "{ifname}",
+		"format-wifi": "{essid} {icons}",
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
+		"format-ethernet": "{ippaddr}/{cidr}",
+		"format-disconnected": "",
 		"on-click": "kitty --class dotfiles-floating -e nmtui"
 	},
 	"hyprland/workspaces": {
@@ -51,8 +65,15 @@
 		"on-click": "blueman-manager"
 	},
 	"pulseaudio": {
-		"format": "{volume}% {icon}",
-		"format-muted": "󰝟",	
+		"format": "{volume}% {icon}",
+		"format-muted": "󰝟",
+		"format-icons": {
+			"default": [
+				"󰕿",
+				"󰖀",
+				"󰕾"
+			]
+		},
 		"scroll-step": 1,
 		"on-click" : "pavucontrol"
 	}
