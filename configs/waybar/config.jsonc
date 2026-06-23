@@ -1,80 +1,69 @@
 {
-	"height": 10,
 	"layer": "top",
-	"spacing": 20,
-	"margin-top": 5,
-	"margin-left": 10,
-	"margin-right": 10,
-	"margin-bottom": 0,
-	"padding": 10,
-		"modules-right": [
+	"position": "top",
+	"height": 32, 
+	"spacing": 0, // Handled beautifully by individual CSS margins instead
+
+	"modules-left": [
+		"custom/media",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
 		"pulseaudio",
 		"bluetooth",
 		"network",
 		"clock"
 	],
-	"modules-center": [
-		"hyprland/workspaces"
-	],
 
-	"clock": {
-		"interval": 60,
-		"format": "{:L%a %d %b %H:%M}"
+	"hyprland/window": {
+		"format": "󱂬 {title}",
+		"max-length": 30,
+		"separate-outputs": true,
+		"rewrite": {
+			"": "Desktop" // Displays clean placeholder text when no window is open
+		}
 	},
-	"network": {
-		"interface": "wlp7s0",
-		"format": "{ifname}",
-		"format-wifi": "{essid} {icons}",
-		"format-icons": [
-			"󰤯",
-			"󰤟",
-			"󰤢",
-			"󰤥",
-			"󰤨"
-		],
-		"format-ethernet": "{ippaddr}/{cidr}",
-		"format-disconnected": "",
-		"on-click": "kitty --class dotfiles-floating -e nmtui"
+	"custom/media": {
+		"format": "󰝚 {}",
+		"max-length": 35,
+		"exec": "playerctl metadata --format '{{title}} - {{artist}}' 2> /dev/null",
+		"on-click": "playerctl play-pause",
+		"interval": 2
 	},
 	"hyprland/workspaces": {
 		"format": "{name}",
-		"format-icons": {
-			"1": "1",
-			"2": "2",
-			"3": "3",
-			"4": "4",
-			"5": "5",
-			"6": "6",
-			"7": "7",
-			"8": "8",
-			"9": "9",
-			"10": "10",
-		//	"active": "",
-		//	"default": ""
-			},
 		"persistent-workspaces": {
-			"DP-4": [1,2,3,4,5],
-			"HDMI-A-2": [6,7,8,9,10]
-			}
+			"DP-4": [1, 2, 3, 4, 5],
+			"HDMI-A-2": [6, 7, 8, 9, 10]
+		}
+	},
+	"network": {
+		"format-wifi": "󰤨 {essid}",
+		"format-ethernet": "󰈀 {ipaddr}/{cidr}",
+		"format-disconnected": "󰤮 Disconnected",
+		"on-click": "kitty --class dotfiles-floating -e nmtui"
 	},
 	"bluetooth": {
-		"formant": "󰂯",
+		"format": "󰂯",
 		"format-on": "󰂯",
-		"formant-off": "󰂲",
+		"format-off": "󰂲",
 		"format-disabled": "󰂲",
 		"on-click": "blueman-manager"
 	},
 	"pulseaudio": {
-		"format": "{volume}% {icon}",
-		"format-muted": "󰝟",
+		"format": "{icon} {volume}%",
+		"format-muted": "󰝟 Muted",
 		"format-icons": {
-			"default": [
-				"󰕿",
-				"󰖀",
-				"󰕾"
-			]
+			"default": ["󰕿", "󰖀", "󰕾"]
 		},
-		"scroll-step": 1,
-		"on-click" : "pavucontrol"
+		"scroll-step": 2,
+		"on-click": "pavucontrol"
+	},
+	"clock": {
+		"interval": 60,
+		"format": "󱑒 {:L%a %d %b %H:%M}"
 	}
 }
