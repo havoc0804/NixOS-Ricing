@@ -13,7 +13,7 @@ input_path = '~/dotfiles/configs/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 #post_hook = "kitty @ set-colors --all ~/.config/kitty/themes/Matugen.conf"
 #post_hook = "kitty +kitten themes --reload-in=all Matugen"
-post_hook = "kill -SIGUSR1 $(pidof kitty)"
+post_hook = "pkill -USR1 kitty"
 
 [config.wallpaper]
 # Whether to set the wallpaper or not

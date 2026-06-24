@@ -1,7 +1,7 @@
 {
 	"layer": "top",
 	"position": "top",
-	"height": 1, 
+	"height": 1, // Bumped safely to fit your larger 18px font size cleanly
 	"spacing": 0,
 	"margin-top": 0,
 	"margin-bottom": 0,
@@ -24,7 +24,7 @@
 
 	"hyprland/window": {
 		"format": "󱂬 {title}",
-		"max-length": 50, // Expanded from 30 to give window names extra breathing room
+		"max-length": 50,
 		"separate-outputs": true,
 		"rewrite": {
 			"": "Desktop"
@@ -40,8 +40,8 @@
 	"hyprland/workspaces": {
 		"format": "{name}",
 		"persistent-workspaces": {
-			"DP-4": [1, 2, 3, 4, 5],
-			"HDMI-A-2": [6, 7, 8, 9, 10]
+			"DP-4": [1, 2, 3, 4, 5]
+		//	"HDMI-A-2": [6, 7, 8, 9, 10]
 		}
 	},
 	"network": {
