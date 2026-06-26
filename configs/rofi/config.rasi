@@ -1,25 +1,22 @@
 @import "colors.rasi"
+
 configuration {
     modi:                       "drun,run,window";
     show-icons:                 true;
-    display-drun:               " ";
-    display-run:                " ";
-    display-window:             " ";
-    drun-display-format:        "{name} <span weight='light' size='small'><i>({generic})</i></span>";
-    window-format:              "{w} · {c} · {t}";
+    drun-display-format:        "{name}";
+    window-format:              "{w} · {c}";
 }
 
-/* Global Properties & Color Palette */
+/* Global Properties & Variable Mapping */
 * {
-    font:                        "JetBrains Mono 11";
+    font:                        "Iosevka 11";
     
-    /* Dark translucent aesthetic matching the backdrop image */
-    background:                  rgba(21, 21, 21, 0.75);
-    background-alt:              rgba(30, 30, 30, 0.4);
-    foreground:                  #c6e6f3;
-    selected:                    rgba(45, 45, 45, 0.8);
-    active:                      #9399b2;
-    urgent:                      #e06c75;
+    /* Strict Material You variable mapping from colors.rasi */
+    background:                  @surface;
+    background-alt:              @surface-container;
+    foreground:                  @on-surface;
+    selected:                    @secondary-container; 
+    accent:                      @secondary-container;
     
     background-color:            transparent;
     text-color:                  @foreground;
@@ -31,14 +28,11 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       550px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    width:                       500px;
 
     enabled:                     true;
-    border:                      2px;
-    border-color:                rgba(255, 255, 255, 0.08);
-    border-radius:               12px;
+    border:                      0px;
+    border-radius:               14px;
     background-color:            @background;
     cursor:                      "default";
 }
@@ -46,32 +40,27 @@ window {
 /* Main Container Box */
 mainbox {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     25px;
+    spacing:                     12px;
+    padding:                     20px;
     children:                    [ "inputbar", "listview" ];
 }
 
 /* Input Bar Section */
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     10px 15px;
-    border-radius:               8px;
+    spacing:                     0px;
+    padding:                     12px 16px;
+    border-radius:               10px;
     background-color:            @background-alt;
-    children:                    [ "prompt", "entry" ];
-}
-
-prompt {
-    enabled:                     true;
-    text-color:                  inherit;
+    children:                    [ "entry" ];
 }
 
 entry {
     enabled:                     true;
     cursor:                      text;
     placeholder:                 "Search...";
-    placeholder-color:           rgba(198, 230, 243, 0.3);
-    text-color:                  inherit;
+    placeholder-color:           @outline;
+    text-color:                  @foreground;
 }
 
 /* List View Container */
@@ -87,43 +76,66 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     6px;
-    margin:                      5px 0px 0px 0px;
+    spacing:                     4px;
+    border:                      0px;
 }
 
 /* Elements inside List View */
 element {
     enabled:                     true;
     spacing:                     12px;
-    margin:                      0px;
-    padding:                     10px 12px;
-    border-radius:               6px;
+    padding:                     8px 12px;
+    border-radius:               8px;
     cursor:                      pointer;
 }
 
-/* Element States */
+/* Element States - Normal */
 element normal.normal {
     background-color:            transparent;
     text-color:                  @foreground;
 }
-
 element selected.normal {
     background-color:            @selected;
-    text-color:                  @foreground;
-    border:                      1px;
-    border-color:                rgba(255, 255, 255, 0.05);
+    text-color:                  @on-primary-container;
 }
-
 element alternate.normal {
     background-color:            transparent;
     text-color:                  @foreground;
+}
+
+/* Element States - Urgent (Fallback Handling) */
+element normal.urgent {
+    background-color:            @error-container;
+    text-color:                  @on-error-container;
+}
+element selected.urgent {
+    background-color:            @error;
+    text-color:                  @on-error;
+}
+element alternate.urgent {
+    background-color:            @error-container;
+    text-color:                  @on-error-container;
+}
+
+/* Element States - Active (Fallback Handling) */
+element normal.active {
+    background-color:            @secondary-container;
+    text-color:                  @on-secondary-container;
+}
+element selected.active {
+    background-color:            @secondary;
+    text-color:                  @on-secondary;
+}
+element alternate.active {
+    background-color:            @secondary-container;
+    text-color:                  @on-secondary-container;
 }
 
 /* Icon & Text Sizing */
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        24px;
+    size:                        22px;
     cursor:                      inherit;
 }
 
