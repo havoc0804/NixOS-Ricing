@@ -1,6 +1,5 @@
 # removing fish greeting
 set fish_greeting
-
 # Aliases
 
 # LS
@@ -17,8 +16,16 @@ alias gc='git commit -m'
 alias gp='git push'
 
 #NixOS Specifc
-alias nrbs='sudo nixos-rebuild switch'
+alias ns='sudo nixos-rebuild switch --flake ~/nixos#nixos'
 
 #Misc
 alias s='sudo '
 alias n='nvim '
+
+# Auto-start Hyprland on tty1
+if status is-login
+    if test (tty) = /dev/tty1
+        exec start-hyprland
+    end
+end
+
