@@ -1,0 +1,167 @@
+ThemeName="Retro"
+ThemeAuthor="Havoc"
+ThemeDescription="Minimal classic desktop"
+Look="win95"
+
+# ------------------------------------------------------------
+# Window dimensions
+# ------------------------------------------------------------
+
+BorderSizeX=2
+BorderSizeY=2
+
+DlgBorderSizeX=2
+DlgBorderSizeY=2
+
+CornerSizeX=16
+CornerSizeY=16
+
+TitleBarHeight=20
+
+TitleBarJustify=0
+
+# ------------------------------------------------------------
+# Icons
+# ------------------------------------------------------------
+
+MenuIconSize=16
+SmallIconSize=16
+LargeIconSize=32
+HugeIconSize=48
+
+# ------------------------------------------------------------
+# Title bar buttons
+# ------------------------------------------------------------
+
+TitleButtonsLeft="s"
+TitleButtonsRight="xim"
+TitleButtonsSupported="xmis"
+
+# ------------------------------------------------------------
+# Fonts
+# ------------------------------------------------------------
+
+TitleFontNameXft="sans-serif:size=10"
+MenuFontNameXft="sans-serif:size=10"
+StatusFontNameXft="monospace:size=10"
+QuickSwitchFontNameXft="monospace:size=10"
+
+NormalButtonFontNameXft="sans-serif:size=10"
+ActiveButtonFontNameXft="sans-serif:size=10:bold"
+
+NormalTaskBarFontNameXft="sans-serif:size=10"
+ActiveTaskBarFontNameXft="sans-serif:size=10:bold"
+
+ToolButtonFontNameXft="sans-serif:size=10"
+NormalWorkspaceFontNameXft="sans-serif:size=10"
+ActiveWorkspaceFontNameXft="sans-serif:size=10:bold"
+
+MinimizedWindowFontNameXft="sans-serif:size=10"
+ListBoxFontNameXft="sans-serif:size=10"
+ToolTipFontNameXft="sans-serif:size=9"
+
+ClockFontNameXft="monospace:size=10"
+
+# ------------------------------------------------------------
+# Classic grey UI
+# ------------------------------------------------------------
+
+ColorDialog="rgb:C0/C0/C0"
+
+ColorNormalBorder="rgb:80/80/80"
+ColorActiveBorder="rgb:00/00/80"
+
+ColorNormalButton="rgb:C0/C0/C0"
+ColorNormalButtonText="rgb:00/00/00"
+
+ColorActiveButton="rgb:E0/E0/E0"
+ColorActiveButtonText="rgb:00/00/00"
+
+ColorNormalTitleButton="rgb:C0/C0/C0"
+ColorNormalTitleButtonText="rgb:00/00/00"
+
+# ------------------------------------------------------------
+# Window title bars
+# ------------------------------------------------------------
+
+ColorNormalTitleBar="rgb:80/80/80"
+ColorNormalTitleBarText="rgb:FF/FF/FF"
+
+ColorActiveTitleBar="rgb:00/00/80"
+ColorActiveTitleBarText="rgb:FF/FF/FF"
+
+# ------------------------------------------------------------
+# Menus
+# ------------------------------------------------------------
+
+ColorNormalMenu="rgb:C0/C0/C0"
+ColorNormalMenuItemText="rgb:00/00/00"
+
+ColorActiveMenuItem="rgb:00/00/80"
+ColorActiveMenuItemText="rgb:FF/FF/FF"
+
+ColorDisabledMenuItemText="rgb:80/80/80"
+
+# ------------------------------------------------------------
+# Taskbar
+# ------------------------------------------------------------
+
+ColorDefaultTaskBar="rgb:C0/C0/C0"
+
+ColorNormalTaskBarApp="rgb:C0/C0/C0"
+ColorNormalTaskBarAppText="rgb:00/00/00"
+
+ColorActiveTaskBarApp="rgb:E0/E0/E0"
+ColorActiveTaskBarAppText="rgb:00/00/00"
+
+ColorMinimizedTaskBarApp="rgb:A0/A0/A0"
+ColorMinimizedTaskBarAppText="rgb:00/00/00"
+
+ColorInvisibleTaskBarApp="rgb:80/80/80"
+ColorInvisibleTaskBarAppText="rgb:00/00/00"
+
+# ------------------------------------------------------------
+# Scrollbars / lists
+# ------------------------------------------------------------
+
+ColorScrollBar="rgb:A0/A0/A0"
+ColorScrollBarSlider="rgb:C0/C0/C0"
+ColorScrollBarButton="rgb:C0/C0/C0"
+ColorScrollBarButtonArrow="rgb:00/00/00"
+
+ColorListBox="rgb:C0/C0/C0"
+ColorListBoxText="rgb:00/00/00"
+
+ColorListBoxSelection="rgb:00/00/80"
+ColorListBoxSelectionText="rgb:FF/FF/FF"
+
+# ------------------------------------------------------------
+# Tooltips
+# ------------------------------------------------------------
+
+ColorToolTip="rgb:FF/FF/E1"
+ColorToolTipText="rgb:00/00/00"
+
+# ------------------------------------------------------------
+# Inputs
+# ------------------------------------------------------------
+
+ColorInput="rgb:FF/FF/FF"
+ColorInputText="rgb:00/00/00"
+
+ColorInputSelection="rgb:00/00/80"
+ColorInputSelectionText="rgb:FF/FF/FF"
+
+# ------------------------------------------------------------
+# Clock
+# ------------------------------------------------------------
+
+ColorClock=""
+ColorClockText="rgb:00/00/00"
+
+# ------------------------------------------------------------
+# Desktop
+# ------------------------------------------------------------
+
+DesktopBackgroundColor="rgb:00/80/80"
+DesktopBackgroundImage=""
