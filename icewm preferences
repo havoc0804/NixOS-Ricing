@@ -1,0 +1,216 @@
+# ============================================================
+# IceWM - Minimal Retro Configuration
+# ============================================================
+
+# ------------------------------------------------------------
+# General behaviour
+# ------------------------------------------------------------
+
+ClickToFocus=1
+FocusOnAppRaise=0
+RaiseOnFocus=1
+RaiseOnClickClient=1
+RaiseOnClickTitleBar=1
+RaiseOnClickButton=1
+RaiseOnClickFrame=1
+
+FocusOnMap=1
+FocusOnMapTransient=0
+FocusOnMapTransientActive=1
+
+LimitSize=1
+LimitPosition=1
+
+SmartPlacement=1
+ManualPlacement=0
+
+OpaqueMove=1
+OpaqueResize=1
+
+SnapMove=1
+SnapDistance=8
+
+CenterTransientsOnOwner=1
+
+# Don't follow the mouse with focus
+StrongPointerFocus=0
+DelayPointerFocus=1
+PointerFocusDelay=200
+
+# ------------------------------------------------------------
+# Keyboard / mouse
+# ------------------------------------------------------------
+
+Win95Keys=1
+QuickSwitch=1
+QuickSwitchToMinimized=1
+QuickSwitchToHidden=1
+QuickSwitchToUrgent=1
+QuickSwitchToAllWorkspaces=0
+QuickSwitchPreview=0
+QuickSwitchRaiseCandidate=0
+QuickSwitchAllIcons=1
+QuickSwitchTextFirst=0
+QuickSwitchVertical=1
+QuickSwitchHugeIcon=0
+QuickSwitchFillSelection=0
+
+UseMouseWheel=0
+
+# Classic workspace switching
+EdgeSwitch=0
+HorizontalEdgeSwitch=0
+VerticalEdgeSwitch=0
+
+# ------------------------------------------------------------
+# Taskbar
+# ------------------------------------------------------------
+
+ShowTaskBar=1
+TaskBarAtTop=0
+TaskBarKeepBelow=0
+TaskBarAutoHide=0
+
+TaskBarShowClock=1
+TaskBarShowWorkspaces=1
+TaskBarShowWindows=1
+TaskBarShowStartMenu=1
+TaskBarShowWindowListMenu=1
+
+TaskBarShowShowDesktopButton=1
+
+# Disable unnecessary monitors
+TaskBarShowCPUStatus=0
+TaskBarShowMEMStatus=0
+TaskBarShowNetStatus=0
+TaskBarShowAPMStatus=0
+TaskBarShowMailboxStatus=0
+
+# Keep the system tray
+TaskBarShowTray=1
+TaskBarEnableSystemTray=1
+
+# Don't clutter task buttons
+TaskBarShowWindowIcons=1
+TaskBarShowWindowTitles=1
+TaskBarTaskGrouping=0
+
+TaskBarWorkspacesLeft=1
+TaskBarWidthPercentage=100
+TaskBarJustify="left"
+
+# ------------------------------------------------------------
+# Pager / workspaces
+# ------------------------------------------------------------
+
+PagerShowPreview=0
+PagerShowWindowIcons=0
+PagerShowMinimized=0
+PagerShowBorders=1
+PagerShowLabels=0
+PagerShowNumbers=1
+
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+
+# ------------------------------------------------------------
+# Menus
+# ------------------------------------------------------------
+
+AutoReloadMenus=1
+
+ShowProgramsMenu=0
+ShowSettingsMenu=1
+ShowFocusModeMenu=1
+ShowThemesMenu=1
+ShowLogoutMenu=1
+
+ShowHelp=0
+ShowAbout=0
+ShowRun=1
+ShowWindowList=1
+
+NestedThemeMenuMinNumber=25
+
+# ------------------------------------------------------------
+# Timing
+# ------------------------------------------------------------
+
+MenuActivateDelay=40
+SubmenuMenuActivateDelay=300
+
+ClickMotionDistance=4
+ClickMotionDelay=200
+MultiClickTime=400
+
+ToolTipDelay=800
+ToolTipTime=3000
+
+# ------------------------------------------------------------
+# Window behaviour
+# ------------------------------------------------------------
+
+HideBordersMaximized=0
+HideTitleBarWhenMaximized=0
+SizeMaximized=0
+
+ConsiderHBorder=0
+ConsiderVBorder=0
+ConsiderSizeHintsMaximized=1
+
+ShowMoveSizeStatus=1
+ShowWorkspaceStatus=1
+
+MinimizeToDesktop=0
+
+# ------------------------------------------------------------
+# Programs
+# ------------------------------------------------------------
+
+TerminalCommand="xterm"
+
+MailCommand=""
+NewMailCommand=""
+LockCommand=""
+ClockCommand=""
+
+CPUStatusCommand=""
+NetStatusCommand=""
+AddressBarCommand=""
+
+# ------------------------------------------------------------
+# Fonts
+# ------------------------------------------------------------
+
+PreferFreetypeFonts=1
+
+# ------------------------------------------------------------
+# Background
+# ------------------------------------------------------------
+
+DesktopBackgroundCenter=0
+DesktopBackgroundScaled=0
+DesktopBackgroundColor="#008080"
+DesktopBackgroundImage=""
+ShuffleBackgroundImages=0
+
+# ------------------------------------------------------------
+# Disable unnecessary experimental/debug features
+# ------------------------------------------------------------
+
+Alpha=0
+Synchronize=0
+LogEvents=0
+Trace=""
+Splash=""
+
+# ------------------------------------------------------------
+# Root mouse buttons
+# ------------------------------------------------------------
+
+DesktopWinMenuButton=0
+DesktopWinListButton=2
+DesktopMenuButton=3
+
+# Double-click titlebar to maximize
+TitleBarMaximizeButton=1
+TitleBarRollupButton=2
