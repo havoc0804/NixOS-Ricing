@@ -1,31 +1,25 @@
-# removing fish greeting
-set fish_greeting
-# Aliases
 
-# LS
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+set -gx PAGER less
+
 alias ls='eza -lah --classify --icons --group-directories-first' # pretty useful defulat command
+fish_add_path ~/.local/bin
+
+alias v='nvim'
+alias s='sudo'
+alias c='clear'
+
 
 #File operations
 alias mv='mv -i' # confirms before doing
 alias rm='rm -i' # comifrms before deleting
 alias cp='cp -i' # confirms before copying
 
-#Git
-alias ga='git add .'
-alias gc='git commit -m'
-alias gp='git push'
 
-#NixOS Specifc
-alias ns='sudo nixos-rebuild switch --flake ~/nixos#nixos'
+set -g fish_greeting
 
-#Misc
-alias s='sudo '
-alias n='nvim '
-
-# Auto-start Hyprland on tty1
-if status is-login
-    if test (tty) = /dev/tty1
-        exec start-hyprland
-    end
-end
-
+# fzf
+fzf --fish | source
+set -gx FZF_DEFAULT_OPTS '--layout reverse --border rounded --info inline'
+starship init fish | source
